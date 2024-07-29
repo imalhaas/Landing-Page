@@ -56,16 +56,16 @@ section.main{
     border: 0%;
 }
 
-.mockup{display: block;width: 100%; color: white;text-align: center;padding-top: 100px;}
+.mockup{display: block;width: 100%; color: white;text-align: center;padding: 10% 0;}
 
 .mockup p{
     margin: 20px;
-    font: normal normal normal 20px/40px Raleway;
+    font: normal normal normal 24px/54px Raleway;
 }
 
 .mockup h1{
-    
-    font: normal normal normal 55px/32px Raleway;
+    font-size: 20px;
+    font: normal normal normal 54px/75px Raleway;
 }
 
 .mockup img{
@@ -382,6 +382,10 @@ footer{
     cursor: pointer;
 }
 
+.text-footer p{
+    font:  normal normal normal 20px/24px Raleway;
+}
+
 
 
 @media screen and (max-width: 768px){
@@ -390,14 +394,15 @@ footer{
     }
 
     .menu-mobile{
-        display: none;
+      
+        opacity: 0;
         transition: 1s;
         position: absolute;
         left: 0;
         top: 65px;
         background-color: white;
         width: 100%;
-        padding: 20px 0;
+        padding: 5px 0;
         text-align: center;
     }
 
@@ -405,13 +410,19 @@ footer{
         opacity: 1;
     }
 
+    hide{
+        opacity: 0;
+    }
+
     .menu-mobile a{
         text-align: center;
         display: block;
-        margin: 10px 0 ;
-        color: rgb(r40, 40, 40);
+        margin: 5px 0 ;
+        color: blue;
         text-decoration: none;
         font-weight: bold;
+        border-bottom:1px solid rgb(40, 40, 40);
+        padding: 5px 0;
     }
 
     .itens-menu-mobile{
